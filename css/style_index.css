@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto Slab", serif;
+}
+
+/*------------------- HEADER ------------------*/
+
+header{
+    min-width: 777px;
+    background-color: #D65353;
+    padding: 7px 0px;
+    min-width: 481px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 85%;
+    font-size: 10px;
+}
+
+.menu-header ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.menu-header ul li{
+    margin-right: 15px;
+    display: flex;
+}
+
+.menu-header ul li:hover{
+    transform: scale(1.05);
+}
+
+.menu-header ul i{
+    font-size: 20px;
+    align-self: center;
+    margin-right:3px;
+}
+
+.container .btn-sidebar{
+    display: none;
+}
+
+.container .logo-container:hover{
+    transform: scale(1.05);
+}
+
+/*------------------- END HEADER ------------------*/
+
+/*------------------- About ------------------*/
+.about-me{
+    background-image: url(../img/bg-img.png);
+    padding: 30px;
+    min-width: 481px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.container-about{
+    background-color: #D65353;
+    display: flex;
+    width: 90%;
+    padding: 20px;
+    border-radius: 30px;
+    margin: auto;
+}
+
+.container-about .img img{
+    width: 200px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.container-about .about p{
+    font-size: 18px;
+    color: black;
+    transition: 0.5s;
+}
+
+.container-about .about p:hover{
+    color: rgb(240, 227, 227);
+}
+
+/*------------------- END ABOUT ------------------*/
+
+/*------------------- SOCIAL MEDIA ------------------*/
+.social-media{
+    text-align: center;
+    margin-top: 40px;
+    min-width: 481px;
+}
+
+.social-media .text{
+    font-size: 20px;
+    color: #D65353;
+}
+
+.container-social{
+    background-color: #D4D4D4;
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: #b1b1b1 5px 5px 10px;
+    width: 250px;
+    margin: auto;
+}
+
+.container-social ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.container-social ul li i{
+    font-size: 37px;
+    margin: 0px 5px;
+    color: black;
+}
+
+/*------------------- END SOCIAL MEDIA ------------------*/
+
+/*------------------- PROJECTS ------------------*/
+.projects{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.project-itens ul{
+    display: flex;
+    list-style: none;
+}
+
+.project-itens ul li{
+    margin: 0px 10px;
+    background-color: #AAAA;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+.project-itens ul li p{
+    width: 220px;
+}
+
+.project-itens ul li img{
+    width: 220px;
+    height: 220px;
+}
+
+.container-projects{
+    background-color: #D4D4D4;
+    border-top: 5px solid #D65353;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.text-project{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+/*------------------- END PROJECTS ------------------*/
+
+
+
+/*------------------- RESPONSIVE MEDIA QUERY ------------------*/
+@media (max-width: 867px) {
+
+    /* HEADER */
+    .container .btn-sidebar{
+        display: block;
+        font-size: 45px;
+        margin-right: 10px;
+    }
+
+    .container .menu-header{
+        display: none;
+    }
+
+    .container .logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        margin: auto;
+        
+    }
+
+    header .container{
+        width: 100%;
+    }
+
+    /*  END HEADER */
+
+    /* ABOUT */
+    .container-about{
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container-about .img{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        left: 11px;
+    }
+    /* END ABOUT */
+
+    /*------------------- END RESPONSIVE MEDIA QUERY ------------------*/
+
+}
+
+
